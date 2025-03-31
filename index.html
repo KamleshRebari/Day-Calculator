@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Calculator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background:linear-gradient(to right, #a857e3, #386c52);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 420px;
+            height: 300px;
+            padding: 20px;
+            /* background-color: rgb(146, 184, 169); */
+            border-radius: 10px;
+            box-shadow: 0 60px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        #h11 {
+            font-size: 36px;
+            padding: 10px;
+            border-radius: 10px;
+            /* background-color: springgreen; */
+            color: white;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: springgreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        #ans {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #ffffff;
+        }
+        #usermonth {
+            width: 400px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="h11"><b>Month <br>Days Calculator</b></h1>
+        <!-- <h2>Enter Month</h2> -->
+        <input type="text" id="usermonth" placeholder="Enter Month">
+        <button onclick="month()">Click here</button>
+        <h2 id="ans"></h2>
+    </div>
+    <script src="daycal.js"></script>
+</body>
+</html>
