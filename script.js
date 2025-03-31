@@ -13,7 +13,7 @@ function month(){
             case 'february':
                 case 'febuary':
             console.log('28');
-            document.getElementById("ans").innerHTML="29";
+            document.getElementById("ans").innerHTML="28";
             break;
         case 'mar':
             case 'march':
